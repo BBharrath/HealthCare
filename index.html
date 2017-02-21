@@ -1,0 +1,49 @@
+<html ng-app="healthApp">
+
+<head>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!--Refer to jquery-->
+    <script src="bower_components/jquery/dist/jquery.js" ></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    
+     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-translate/angular-translate.js"></script>
+    <script src="bower_components/underscore/underscore-min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+
+
+</head>
+    <body>
+      <div class="container-fluid" ng-controller="headerCtrl">
+          
+           <div ui-view = "header"></div>
+          <div ui-view = "footer"></div>
+        
+    <!--header files-->
+    <script src="App/header/header.js"></script>
+    <script src="App/header/headerCtrl.js"></script>
+    <!--end of header-->
+       <script src="App/patientdir/patientdir.js"></script>
+        <script src="App/patientdir/patientCtrl.js"></script>
+        <script src="App/patientdir/patientServ.js"></script>
+        
+    
+          
+      
+    <!--register files-->      
+    <script src="App/register/register.js"></script>
+    <script src="App/register/registerCtrl.js"></script>
+ 
+    <!--end of register-->     
+      <!--main files-->
+      <script src="App/app.js"></script>
+      <!--end of main files-->
+        </div>
+    
+    </body>
+</html>
