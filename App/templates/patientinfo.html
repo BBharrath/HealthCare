@@ -1,0 +1,77 @@
+<div ng-controller="patientCtrl">
+    <div class="row">
+        <div class="col-md-2">
+            <input type="text" ng-model="searchName"
+                   class="form-control"
+                   placeholder="Search By Name">
+        </div>
+       
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <td>S.No</td>
+                <td>Year</td>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Contact</td>
+                <td>EmergencyType</td>
+                
+            </tr>
+        </thead>
+    
+        <tr ng-repeat="detail in details 
+                       |filter:{Name:searchName}"}>
+            <td>{{$index+1}}</td>
+            <td>{{detail.Year}}</td>
+            <td>{{detail.Name}}</td>
+            <td>{{detail.Age}}</td>
+   <td>{{detail.Contact}}</td>
+               <td>{{detail.EmergencyType}}</td>
+        </tr>
+    </table>
+
+</div>
+
+
+
+
+
+
+<!--<div ng-controller="patientCtrl">
+    <div class="row">
+        <div class="col-md-2">
+            <input type="text" placeholder="Search By Name" class="form-control" ng-model="searchModel">
+        </div>
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Year</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Contact</th>
+                <th>EmergencyType</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="detail in details
+               |filter:{Make:searchModel}">
+                <td>{{::$index+1}}</td>
+                <td>{{::detail.Year}}</td>
+                <td>{{::detail.Name|uppercase}}</td>
+                <td>{{::detail.Age}}</td>
+                <td>{{detail.EmergencyType|lowercase}}</td>
+                <td>{{::detail.Contact}}</td>
+                
+            </tr>
+
+      
+
+        </tbody>
+    </table>
+
+</div>

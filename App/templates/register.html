@@ -1,0 +1,84 @@
+<form name="userForm" ng-submit="submit()" novalidate>
+    <div class="form-horizontal">
+        
+      <!-- FirstName -->  
+    <div class="form-group"  ng-class="{ 'has-error' : userForm.firstname.$invalid && !userForm.firstname.$pristine }">
+    <label class="control-label col-xs-2">First Name</label>
+    <div class="col-xs-4">
+    <input type="text"  name="firstname" class="form-control" placeholder="FirstName" ng-model="user.name" ng-pattern="/^[a-zA-Z\s]*$/" required>
+        <p ng-show="userForm.firstname.$invalid && !userForm.firstname.$pristine" class="help-block">Your name is required</p>
+        
+    <p ng-show="userForm.firstname.$error.pattern" class="help-block">Alphabets only.</p>
+        </div>
+</div>
+
+<!-- LastName -->
+<div class="form-group"  ng-class="{ 'has-error' : userForm.lastname.$invalid && !userForm.lastname.$pristine }">
+    <label class="control-label col-xs-2">Last Name</label>
+    <div class="col-xs-4">
+    <input type="text" name="lastname" class="form-control" placeholder="LastName" ng-model="user.lastname" ng-pattern="/^[a-zA-Z]*$/" required>
+        <p ng-show="userForm.lastname.$invalid && !userForm.lastname.$pristine" class="help-block">Your name is required</p>
+        
+    <p ng-show="userForm.lastname.$error.pattern" class="help-block">Alphabets only.</p>
+        </div>
+</div>
+        
+   <!-- Age --> 
+<div class="form-group"  ng-class="{ 'has-error' : userForm.age.$invalid && !userForm.age.$pristine }">
+    <label class="control-label col-xs-2">Age</label>
+    <div class="col-xs-4">
+    <input type="text" name="age" class="form-control" ng-model="user.age" placeholder="Age" ng-pattern="/^[0-9]*$/" ng-minlength="1" ng-maxlength="3" required>
+     <p ng-show="userForm.age.$invalid && !userForm.age.$pristine" class="help-block"> Age is required</p>
+    <p ng-show="userForm.age.$error.pattern" class="help-block">Numbers Only</p>
+    <p ng-show="userForm.age.$error.minlength" class="help-block">Min one Number</p>
+    <p ng-show="userForm.age.$error.maxlength" class="help-block">Max three numbers</p>
+
+        </div>
+</div>
+<div class="form-group"  ng-class="{ 'has-error' : userForm.phonenumber.$invalid && !userForm.phonenumber.$pristine }">
+            <label  class="control-label col-xs-2">Mobile</label>
+            <div class="col-xs-4">
+                <input type="text" name="phonenumber" class="form-control" placeholder="Phone Number"  ng-model="user.phoneNumber" ng-pattern="/^[0-9]*$/" ng-minlength="10" ng-maxlength="10" required>
+                <p ng-show="userForm.phonenumber.$invalid && !userForm.phonenumber.$pristine" class="help-block"> Number  required</p>
+               <p ng-show="userForm.phonenumber.$error.pattern" class="help-block">Numbers Only</p>
+               <p ng-show="userForm.phonenumber.$error.maxlength" class="help-block">Max ten numbers</p>
+            </div>
+        </div>
+        
+        
+    
+        <div class="form-group" ng-class="{ 'has-error' : userForm.phonenumber.$invalid && !userForm.phonenumber.$pristine }">
+            <label  class="control-label col-xs-2">Gender</label>
+            <div class="col-xs-4">
+                <select   ng-model="user.gender" class="form-control" required>
+                    <option value="">Select Gender</option>
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                    <option value="">Don't Reveal</option>
+                </select>
+                <p ng-show="userForm.gender.$invalid && !userForm.phonenumber.$pristine" class="help-block">Select Gender</p>
+            </div>
+        </div>
+    <div class="form-group">
+            <label  class="control-label col-xs-2">State</label>
+            <div class="col-xs-4">
+                <select class="form-control">
+                    <option value="">Please Select</option>
+                </select>
+            </div>
+        </div>
+         <div class="form-group">
+            <label  class="control-label col-xs-2">Comment</label>
+            <div class="col-xs-4">
+                <textarea class="form-control" rows="5"> </textarea>
+            </div>
+        </div>
+       <div class=" form-group ">
+            <div class="col-xs-offset-2 col-xs-4 ">
+                <button type="submit" ng-click="submit" class="btn btn-primary">Register</button>
+            </div>
+        </div>
+    </div>
+
+        
+        

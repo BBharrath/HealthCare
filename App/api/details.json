@@ -1,0 +1,60 @@
+{"details": [
+                {
+                    "_id": "57e0d3db63f46eeb879ba20f",
+                    "Name": "Vijay",
+                    "Age": "28",
+                    "Year": 2014,
+                    "EmergencyType":"Accident",
+                    "Contact": 1774601705
+  },
+                {
+                    "_id": "57e0d3db63f46eeb879ba20f",
+                    "Name": "Khan",
+                    "Age": "45",
+                    "Year": 2017,
+                    "EmergencyType":"Snake Bite",
+                    "Contact": 1774601705
+  },
+               {
+                    "_id": "57e0d3db63f46eeb879ba20f",
+                    "Name": "Shaha",
+                    "Age": "66",
+                    "Year": 2014,
+                    "EmergencyType":"Chest Pain",
+                    "Contact": 1774601705
+  },
+                {
+                    "_id": "57e0d3db63f46eeb879ba20f",
+                    "Name": "Anil",
+                    "Age": "33",
+                    "Year": 2016,
+                    "EmergencyType":"Accident",
+                    "Contact": 1774601705
+  },
+             {
+                    "_id": "57e0d3db63f46eeb879ba20f",
+                    "Name": "Kahan",
+                    "Age": "45",
+                    "Year": 2014,
+                    "EmergencyType":"Dengue Fever",
+                    "Contact": 1774601705
+  },
+               {
+                    "_id": "57e0d3db63f46eeb879ba20f",
+                    "Name": "Sharath",
+                    "Age": "24",
+                    "Year": 2017,
+                    "EmergencyType":"Accident",
+                    "Contact": 1774601705
+  },
+                {
+                    "_id": "57e0d3db63f46eeb879ba20f",
+                    "Name": "Arvind",
+                    "Age": "77",
+                    "Year": 2016,
+                    "EmergencyType":"Chest Pain",
+                    "Contact": 1774601705
+  }
+               
+]
+}
